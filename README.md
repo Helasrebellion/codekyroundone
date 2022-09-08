@@ -1,2 +1,0 @@
-# CodeKY
- Final Project

@@ -1,5 +1,3 @@
-
-
 a {
    font-size: 40px;
    color: black;
@@ -8,19 +6,13 @@ a {
    width: 100%;
    min-width: 100%;
 }
+
 a:hover {
-   color: red;
-   
+   color: white;
+   background-color: black;
 }
 
-.topnav a.active {
-   background-color: #04AA6D;
-   color: black;
- }
-
 nav {
-
-   
    display: inline-block;
    margin-block: 2px;
    text-decoration: none;
@@ -41,6 +33,5 @@ body {
 #summary {}
 
 #workexp {
-   
-   float: right;
+
 }

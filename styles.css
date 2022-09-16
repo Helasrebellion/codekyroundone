@@ -1,4 +1,23 @@
-ul {
+/* HTML and Body Styles */
+
+html {
+  color: white;
+  height: 100%;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12px;
+}
+
+body {
+  background-color: black;
+  margin-top: 0%;
+  margin-left: 0%;
+  margin-right: 30%;
+  margin-bottom: 0%;
+}
+
+/*Navigation Styles */
+
+#nav {
    list-style-type: none;
    margin: 0;
    padding: 0;
@@ -23,19 +42,14 @@ ul {
    color: black;
  }
 
-
-body {
-   margin-top: 0%;
-   margin-left: 0%;
-   margin-right: 30%;
-   margin-bottom: 0%;
-   Column-count: 2;
+/* Mobile Styles:0px to 480px */
+@media only screen and (max-width:480px){}
+ul.nav a{
+  font-size: 1.5em;
+  line-height: 2.2em;
 }
+/* Tablet Styles:481px greater */
+@media only screen and (max-width:481px){}
 
-#contactinfo {}
-
-#summary {}
-
-#workexp {
-
-}
+/* Desktop Styles:769px and greater */
+@media only screen and (max-width:769px){}

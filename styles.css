@@ -1,5 +1,3 @@
-/* HTML and Body Styles */
-
 html {
   color: white;
   height: 100%;
@@ -14,8 +12,6 @@ body {
   margin-right: 30%;
   margin-bottom: 0%;
 }
-
-/*Navigation Styles */
 
 nav {
    list-style-type: none;

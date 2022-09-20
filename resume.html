@@ -18,20 +18,46 @@
             
          </ul>
       </nav>
-   </head>
-
-   <body>
-      <p id="contactinfo">
-         <h1>Sylvia Mullins</h1><br>
+  
+    <style>
+        .body {
+            padding: 0;
+            margin: 0;
+        }
+  
+        .Parent {
+            display: flex;
+            flex-direction: row;
+        }
+  
+        .child1 {
+            width: 70%;
+            height: 100vh;
+            text-align: center;
+            color: white;
+        }
+  
+        .child2 {
+            width: 30%;
+            padding: 0px;
+            height: 100vh;
+            margin: 0px;
+            color: white;
+        }
+    </style>
+</head>
+  
+<body>
+    <div class="Parent">
+        <div class="child1">
+            <h1>Sylvia Mullins</h1><br>
          <img src="/Images/shm.png" alt="Headshot"
             style="width:200px;height:300px;border-radius: 50%;"><br>
          Crestview KY<br>
          sylviamullinsdev@gmail.com<br>
          https://sylviamullins.dev/<br>
-      </p>
-
-      <p id="summary">
-         <h3>SUMMARY</h3>
+          
+          <h3>SUMMARY</h3>
          Seeking entry level programming position to build skill set.<br>
 
          <h3>EDUCATION</h3>
@@ -57,13 +83,10 @@
          • Microsoft Office<br>
          • Linux<br>
          • Windows 10 & 11<br>
-         
-      </p>
-
-      <aside>
-         <p id="workexp">
-            
-            <h3>WORK EXPERIENCE</h3>
+        </div>
+        <div class="child2">
+            <p>
+               <h3>WORK EXPERIENCE</h3>
             Patient Quality Outreach Tech<br>
             4/17 - Present<br>
             Healthwarehouse.com Inc<br>
@@ -102,7 +125,9 @@
             promotional updates.<br>
             • Maintained store safety standards and identified, resolved, and
             escalated store maintenance issues as needed.<br>
-         </p>
-      </aside>
-   </body>
+            </p>
+        </div>
+    </div>
+</body>
+  
 </html>

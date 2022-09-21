@@ -46,6 +46,27 @@ nav {
   background-color: gray;
  }
 
+ #footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  background: purple;
+ }
+
+ .leftfooter{
+  text-align:left;
+  float:left;
+  }
+  .rightfooter{
+  float:right;
+  text-align:right;
+  }
+  .centeredfooter{
+  text-align:center;
+  }
+
 /* Mobile Styles:0px to 480px */
 @media only screen and (max-width:480px){}
 ul.nav a{

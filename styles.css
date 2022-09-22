@@ -12,8 +12,13 @@ body {
   margin-right: 30%;
   margin-bottom: 0%;
 }
+ /*Nav bar styles
+ figure out why nav bar is cutting off webpages now that footer is fixed
+ */
 
 nav {
+  position: fixed;
+  width: 100%;
    list-style-type: none;
    margin: 0;
    padding: 10;
@@ -46,14 +51,16 @@ nav {
   background-color: gray;
  }
 
+ /*Footer Styles*/
+
+
  #footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  margin: 0 auto;
-  height: auto;
-  background: purple;
- }
+  position: absolute;
+  background-color:#F2F2F2;
+	color: #151515;
+	width:100%;
+  overflow: auto;
+}
 
  .leftfooter{
   text-align:left;
@@ -61,20 +68,21 @@ nav {
   }
   .rightfooter{
   float:right;
-  text-align:right;
+  text-align:left;
+
   }
   .centeredfooter{
   text-align:center;
   }
 
-/* Mobile Styles:0px to 480px */
+/* Mobile Styles:0px to 480px 
 @media only screen and (max-width:480px){}
 ul.nav a{
   font-size: 1.5em;
   line-height: 2.2em;
 }
-/* Tablet Styles:481px greater */
+ Tablet Styles:481px greater 
 @media only screen and (max-width:481px){}
 
-/* Desktop Styles:769px and greater */
-@media only screen and (max-width:769px){}
+Desktop Styles:769px and greater 
+@media only screen and (max-width:769px){} */

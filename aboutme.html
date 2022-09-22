@@ -18,25 +18,68 @@
             
          </ul>
       </nav>
+
+      <style>
+         html {
+            font-size: medium;
+         }
+
+         .slideshow-container {
+            margin: 0px auto;
+            text-align:center; 
+            width: auto;
+            height: auto;         }
+      </style>
    </head>
 
    <body>
-      <p>
+      <div class="slideshow-container">
+        <div class="aboutpics">
+          <img src="/Images/aboutpage/family.JPG" style="width:700px;height:750px;border-radius: 600px;">
+        </div>
+      
+        <div class="aboutpics">
+          <img src="/Images/aboutpage/group.JPG" style="width:700px;height:750px;border-radius: 600px;">
+        </div>
+      
+        <div class="aboutpics">
+          <img src="/Images/aboutpage/son.JPG" style="width:700px;height:750px;border-radius: 600px;">
+        </div>
+      </div>
+      
+      <script>
+      let slideIndex = 0;
+      showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("aboutpics");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 4000); 
+}
+      </script>
+
+      <p style="text-align: center;padding: 0px 80px 0px 80px;">
         My name is Sylvia Hela Mullins. I am a Cincinnati based programmer. 
         I have an associates degree in Applied Science Computer Information and Technology Programming with a 3.9 overall GPA. 
         I am currently looking for a university to begin my pursuit of a bachelors degree in Graphic Information Technology Full Stack Development. 
         I am very detail-oriented and versatile to complete any project or goal.</p>
 
-<p>In 2019 I decided that I wanted to make more of myself. 
+<p style="text-align: center;padding: 0px 80px 0px 80px;">In 2019 I decided that I wanted to make more of myself. 
     I looked into school to see what options I had. 
     I knew almost immediately I wanted to get into Computer Information Technology and that I wanted to focus in programming. 
     My favorite part of programming is when you finally get the code to work without errors. The “Aha” moments are what keep me going.</p>
 
-<p>I am married with two step children. We reside in Crestview Kentucky across the river from Cincinnati Ohio. 
+<p style="text-align: center;padding: 0px 80px 0px 80px;">I am married with two step children. We reside in Crestview Kentucky across the river from Cincinnati Ohio. 
     We spend most of our days chasing the toddler around while balancing both of us working full time going to school and managing everyday responsibilities. 
     We are in the market for a house within the next year.</p>
 
-<p>When I am not designing and coding, you can find me spending time with my family or friends, 
+<p style="text-align: center;padding: 0px 80px 0px 80px;">When I am not designing and coding, you can find me spending time with my family or friends, 
     playing videogames, shopping for the best deal, listening to music, or cooking. 
     Designing websites has always been a hobby of mine. 
     I built my first website in middle school on freewebs.com It was a communication forum for my guild in adventure quest worlds.</p>
@@ -62,4 +105,5 @@
          </p>
          <p class="centeredfooter">placeholder</p>
      </div>
+          
 </html>

@@ -12,6 +12,10 @@ body {
   margin-right: 30%;
   margin-bottom: 0%;
 }
+
+main {
+  padding-top: 100px;
+}
  /*Nav bar styles
  figure out why nav bar is cutting off webpages now that footer is fixed
  */
@@ -75,14 +79,21 @@ nav {
   text-align:center;
   }
 
-/* Mobile Styles:0px to 480px 
-@media only screen and (max-width:480px){}
-ul.nav a{
-  font-size: 1.5em;
-  line-height: 2.2em;
-}
- Tablet Styles:481px greater 
-@media only screen and (max-width:481px){}
+/*Media Queries*/
+@media only screen and (min-width: 320px) {
 
-Desktop Styles:769px and greater 
-@media only screen and (max-width:769px){} */
+
+
+}
+
+@media only screen and (min-width: 480px) {
+
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+
+  
+}

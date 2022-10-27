@@ -15,45 +15,77 @@ body {
 
 main {
   padding-top: 100px;
+  padding-bottom: 200px;
 }
- /*Nav bar styles
- figure out why nav bar is cutting off webpages now that footer is fixed
- */
 
-nav {
-  position: fixed;
-  width: 100%;
-   list-style-type: none;
-   margin: 0;
-   padding: 10;
-   overflow: hidden;
-   background-color: black;
- }
- 
- li {
-   float: left;
-   list-style-type: none;
-   text-decoration: none;
- }
- 
- li a {
-   display: block;
-   color: white;
-   text-align: center;
-   padding: 20px 20px;
-   list-style-type: none;
-   text-decoration: none;
 
- }
- 
- li a:hover {
-   background-color: white;
-   color: black;
- }
 
- a.active {
-  background-color: gray;
- }
+
+/*Media Queries*/
+@media only screen and (min-width: 320px) {
+
+  #footer {
+    position: absolute;
+    background-color:#F2F2F2;
+    color: #151515;
+    width:100%;
+  }
+  
+   .leftfooter{
+    text-align:left;
+    float:left;
+    }
+    
+    .rightfooter{
+    float:right;
+    text-align:left;
+  
+    }
+    .centeredfooter{
+    text-align:center;
+    }
+
+}
+
+@media only screen and (min-width: 480px) {
+ /*Nav Styles*/
+
+  nav {
+    position: fixed;
+    width: 100%;
+     list-style-type: none;
+     margin: 0;
+     padding: 10;
+     overflow: hidden;
+     background-color: black;
+   }
+   
+   li {
+     float: left;
+     list-style-type: none;
+     text-decoration: none;
+   }
+   
+   li a {
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 20px 20px;
+     list-style-type: none;
+     text-decoration: none;
+  
+   }
+   
+   li a:hover {
+     background-color: white;
+     color: black;
+   }
+  
+   a.active {
+    background-color: gray;
+   }
+
+}
 
  /*Footer Styles*/
 
@@ -79,21 +111,65 @@ nav {
   text-align:center;
   }
 
-/*Media Queries*/
-@media only screen and (min-width: 320px) {
-
-
-
-}
-
-@media only screen and (min-width: 480px) {
-
-
-
-}
-
 @media only screen and (min-width: 768px) {
-
-
+ /*Nav Styles*/
+  nav {
+    position: fixed;
+    width: 100%;
+     list-style-type: none;
+     margin: 0;
+     padding: 10;
+     overflow: hidden;
+     background-color: black;
+   }
+   
+   li {
+     float: left;
+     list-style-type: none;
+     text-decoration: none;
+   }
+   
+   li a {
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 20px 20px;
+     list-style-type: none;
+     text-decoration: none;
+  
+   }
+   
+   li a:hover {
+     background-color: white;
+     color: black;
+   }
+  
+   a.active {
+    background-color: gray;
+   }
   
 }
+
+ /*Footer Styles*/
+
+
+ #footer {
+  position: absolute;
+  background-color:#F2F2F2;
+	color: #151515;
+	width:100%;
+}
+
+ .leftfooter{
+  text-align:left;
+  float:left;
+  }
+  
+  .rightfooter{
+  float:right;
+  text-align:left;
+
+  }
+  .centeredfooter{
+  text-align:center;
+  }

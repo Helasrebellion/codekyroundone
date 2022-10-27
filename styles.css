@@ -63,13 +63,13 @@ nav {
   background-color:#F2F2F2;
 	color: #151515;
 	width:100%;
-  overflow: auto;
 }
 
  .leftfooter{
   text-align:left;
   float:left;
   }
+  
   .rightfooter{
   float:right;
   text-align:left;

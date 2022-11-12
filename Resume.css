@@ -1,4 +1,4 @@
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 600px) {
     
     .body {
         padding: auto;
@@ -7,11 +7,10 @@
     }
 
     .Parent {  
-        
-    display: grid;
+  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 19.1% 24.7% 26.5% 29.8%;
-  gap: 150px 0px;
+  gap: 0px 0px;
   grid-auto-flow: row;
   justify-content: space-between;
   align-content: center;
@@ -24,13 +23,30 @@
     "exp";
 }
 
-.info { grid-area: info; }
+.info { 
+    
+grid-area: info;
+margin-top: 400px;
 
-.summary { grid-area: summary; }
+}
 
-.skills { grid-area: skills; }
+.summary { 
+    
+    grid-area: summary; 
 
-.exp { grid-area: exp; }
+}
+
+.skills { 
+    
+    grid-area: skills; 
+
+}
+
+.exp { 
+    
+    grid-area: exp; 
+
+}
 
       
       
@@ -39,9 +55,10 @@
       
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 768px) {
     
-    .Parent {  display: grid;
+    .Parent {  
+        display: grid;
         grid-template-columns: 50% 50% 50%;
         grid-template-rows: 50% 50% 50%;
         grid-auto-columns: 1fr;
@@ -57,18 +74,40 @@
           ". exp .";
       }
       
-      .info { grid-area: info; }
-      
-      .summary { grid-area: summary; }
-      
-      .skills { grid-area: skills; }
-      
-      .exp { grid-area: exp; }
-      
+      .info { 
+        
+        grid-area: info;
+        margin-top: 400px;
 
-@media only screen and (min-width: 768px) {
+    }
+      
+      .summary {
+        
+        grid-area: summary; 
+    
+    }
+      
+      .skills { 
+        
+        grid-area: skills; 
+    
+    }
+      
+      .exp { 
+        
+        grid-area: exp; 
+    
+    }
+      
+    }
+   
+    
 
-    .Parent {  display: grid;
+
+@media only screen and (min-width: 992px) {
+
+    .Parent {  
+        display: grid;
         grid-template-columns: 30% 70%;
         grid-template-rows: auto auto auto;
         grid-auto-columns: auto;
@@ -84,12 +123,30 @@
           "summary exp"
           "skills exp";
       }
+
+      .info { 
+        
+        grid-area: info; 
+    
+    }
       
-      .summary { grid-area: summary; }
+      .summary { 
+
+        grid-area: summary; 
+
+    }
       
-      .skills { grid-area: skills; }
+      .skills { 
+
+        grid-area: skills; 
+    
+    }
       
-      .exp { grid-area: exp; }
+      .exp { 
+
+        grid-area: exp;
+
+    }
       
-      .info { grid-area: info; }
+      
 }

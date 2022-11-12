@@ -1,3 +1,5 @@
+/* Mobile media*/
+
 @media only screen and (max-width: 600px) {
     
     .body {
@@ -50,7 +52,8 @@ grid-area: info;
 
       
       
-      
+   /* Tablet media*/
+   
       
       
 }
@@ -101,6 +104,7 @@ grid-area: info;
     }
    
     
+/* Desktop media*/
 
 
 @media only screen and (min-width: 992px) {

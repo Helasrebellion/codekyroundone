@@ -7,11 +7,13 @@
     }
 
     .Parent {  
+        margin: auto;
+        width: 50%;
   grid-template-columns: 1fr;
   grid-template-rows: 19.1% 24.7% 26.5% 29.8%;
   gap: 0px 0px;
   grid-auto-flow: row;
-  justify-content: space-between;
+  justify-content: center;
   align-content: center;
   justify-items: center;
   align-items: center;
@@ -25,7 +27,6 @@
 .info { 
     
 grid-area: info;
-margin-top: 400px;
 
 }
 
@@ -76,7 +77,6 @@ margin-top: 400px;
       .info { 
         
         grid-area: info;
-        margin-top: 400px;
 
     }
       

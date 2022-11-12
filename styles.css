@@ -52,6 +52,44 @@ main {
     background-color: #1a5653;
    }
   
+/* Button Style */
+   .socialButton {
+    position: relative;
+    background-color: #1a5653;
+    border: none;
+    border-radius: 50%;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .socialButton:after {
+    content: "";
+    background: #5cd3cd;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .socialButton:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
 
  /*Footer Styles*/
 
@@ -66,11 +104,15 @@ main {
  .leftfooter{
   text-align:left;
   float:left;
+  padding-top: 100px;
+  padding-left: 10px;
   }
   
   .rightfooter{
   float:right;
   text-align:left;
+  padding-top: 50px;
+  padding-right: 20px;
 
   }
   .centeredfooter{

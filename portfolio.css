@@ -54,6 +54,12 @@ h1 {
     transform: scale(1.2);
     background-color: #388f8a;
   }
+
+  .webpage {
+    height: 550px;
+    width: 500px;
+    padding-bottom: 10px;
+  }
 /* Mobile media*/
 
 @media only screen and (min-width: 576px) {
@@ -78,27 +84,23 @@ h1 {
       
       .javacalc { 
         grid-area: javacalc;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
  
     }
       
       .redballpizza { grid-area: redballpizza;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
       }
       
       .lymanhall { grid-area: lymanhall;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
       }
       
       .newyear { grid-area: newyear; 
-        padding-bottom: 20px;
+        padding-bottom: 30px;
       }
       
-      .webpage {
-        height: 60%;
-        width: 60%;
-        padding-bottom: 10px;
-      }
+    
 }
 
 
@@ -128,22 +130,30 @@ h1 {
       }
       
       .javacalc { grid-area: javacalc;
-        padding-bottom: 20px;
+        padding-top: 110px;
       }
       
       .redballpizza { grid-area: redballpizza;
-        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 50px;
       }
       
       .lymanhall { grid-area: lymanhall;
-        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 50px;
       }
       
       .newyear { grid-area: newyear; 
-        padding-bottom: 20px;
+        padding-top: 30px;
+        padding-bottom: 50px;
 
       }
-      
+      .webpage {
+        height: 750px;
+        width: 700px;
+        padding-bottom: 10px;
+      }
+     
 
 }
 

@@ -96,49 +96,30 @@ grid-area: info;
    /* Tablet media*/
 @media only screen and (min-width: 768px) {
     
-    .Parent {  
-        display: grid;
-        grid-template-columns: 40% 20% 40%;
-        grid-template-rows: 40% 20% 40%;
-        grid-auto-columns: 1fr;
+    .Parent {  display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 500px 550px 950px;
+        grid-auto-rows: 1fr;
         gap: 0px 0px;
-        grid-auto-flow: row;
-        justify-content: space-between;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
+        grid-auto-flow: column;
+        justify-content: center;
+        align-content: space-between;
+        justify-items: stretch;
+        align-items: stretch;
         grid-template-areas:
-          ". info ."
-          "summary . skills"
-          ". exp .";
+          "info info"
+          "summary skills"
+          "exp exp";
       }
       
-      .info { 
-        
-        grid-area: info;
-
-    }
+      .summary { grid-area: summary; }
       
-      .summary {
-        
-        grid-area: summary; 
-    
-    }
+      .skills { grid-area: skills; }
       
-      .skills { 
-        
-        grid-area: skills; 
-    
-    }
+      .info { grid-area: info; }
       
-      .exp { 
-        
-        grid-area: exp; 
-    
-    }
-     
-    }
-   
+      .exp { grid-area: exp; }
+      
     
 /* Desktop media*/
 

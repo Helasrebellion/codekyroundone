@@ -29,7 +29,6 @@ main {
 
 .topnav a:hover {
   background-color: #1e706c;
-  transform: scale(1.2);
 }
 
 .topnav a.active {

@@ -77,17 +77,31 @@ h1 {
       }
       
       .javacalc { 
-        grid-area: javacalc; 
+        grid-area: javacalc;
+        padding-bottom: 20px;
+ 
     }
       
-      .redballpizza { grid-area: redballpizza; }
+      .redballpizza { grid-area: redballpizza;
+        padding-bottom: 20px;
+      }
       
-      .lymanhall { grid-area: lymanhall; }
+      .lymanhall { grid-area: lymanhall;
+        padding-bottom: 20px;
+      }
       
-      .newyear { grid-area: newyear; }
+      .newyear { grid-area: newyear; 
+        padding-bottom: 20px;
+      }
       
-
+      .webpage {
+        height: 800px;
+        width: 800px;
+      }
 }
+
+
+
 
 /* Tablet media*/
 
@@ -112,15 +126,30 @@ h1 {
           "newyear";
       }
       
-      .javacalc { grid-area: javacalc; }
+      .javacalc { grid-area: javacalc;
+        padding-bottom: 20px;
+      }
       
-      .redballpizza { grid-area: redballpizza; }
+      .redballpizza { grid-area: redballpizza;
+        padding-bottom: 20px;
+      }
       
-      .lymanhall { grid-area: lymanhall; }
+      .lymanhall { grid-area: lymanhall;
+        padding-bottom: 20px;
+      }
       
-      .newyear { grid-area: newyear; }
+      .newyear { grid-area: newyear; 
+        padding-bottom: 20px;
+
+      }
       
 
+}
+
+.webpage {
+  height: 50%;
+  width: 50%;
+  padding-bottom: 10px;
 }
 
 /* Desktop media*/
@@ -146,15 +175,29 @@ h1 {
       
       .javacalc { 
         grid-area: javacalc;
-        padding-left: 300px;
-        padding-top: 150px;
+        padding-bottom: 20px;
+
     }
       
-      .redballpizza { grid-area: redballpizza; }
-      
-      .lymanhall { grid-area: lymanhall; }
-      
-      .newyear { grid-area: newyear; }
-      
+      .redballpizza { grid-area: redballpizza;
+        padding-bottom: 20px;
 
+      }
+      
+      .lymanhall { grid-area: lymanhall;
+        padding-bottom: 50px;
+
+      }
+      
+      .newyear { grid-area: newyear; 
+        padding-bottom: 50px;
+
+      }
+      
+      .webpage {
+        height: 80%;
+        width: 80%;
+        padding-bottom: 10px;
+      }
+      
 }

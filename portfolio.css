@@ -1,3 +1,7 @@
+h1 {
+    font-size: xx-large;
+    padding-bottom: 10px;
+}
 .githublink {
     background-color: #1a5653;
     border: none;
@@ -17,7 +21,7 @@
     border-radius: 16px;
     font-size: 28px;
     padding: 0px;
-    width: 75px;
+    width: 250px;
     height: 50px;
     text-align: center;
     -webkit-transition-duration: 0.4s; 
@@ -54,6 +58,35 @@
 
 @media only screen and (min-width: 576px) {
 
+    .Portfolio {  display: grid;
+        grid-template-columns: 50%;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: column;
+        justify-content: center;
+        align-content: space-between;
+        justify-items: stretch;
+        align-items: stretch;
+        grid-template-areas:
+          "javacalc"
+          "redballpizza"
+          "lymanhall"
+          "newyear";
+      }
+      
+      .javacalc { 
+        grid-area: javacalc; 
+    }
+      
+      .redballpizza { grid-area: redballpizza; }
+      
+      .lymanhall { grid-area: lymanhall; }
+      
+      .newyear { grid-area: newyear; }
+      
+
 }
 
 /* Tablet media*/
@@ -61,10 +94,67 @@
 
 @media only screen and (min-width: 768px) {
 
+    .Portfolio {  display: grid;
+        grid-template-columns: 50%;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: column;
+        justify-content: center;
+        align-content: space-between;
+        justify-items: stretch;
+        align-items: stretch;
+        grid-template-areas:
+          "javacalc"
+          "redballpizza"
+          "lymanhall"
+          "newyear";
+      }
+      
+      .javacalc { grid-area: javacalc; }
+      
+      .redballpizza { grid-area: redballpizza; }
+      
+      .lymanhall { grid-area: lymanhall; }
+      
+      .newyear { grid-area: newyear; }
+      
+
 }
 
 /* Desktop media*/
 
 
 @media only screen and (min-width: 992px) {
+
+    .Portfolio {  display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: column;
+        justify-content: center;
+        align-content: space-between;
+        justify-items: stretch;
+        align-items: stretch;
+        grid-template-areas:
+          "javacalc redballpizza"
+          "lymanhall newyear";
+      }
+      
+      .javacalc { 
+        grid-area: javacalc;
+        padding-left: 300px;
+        padding-top: 150px;
+    }
+      
+      .redballpizza { grid-area: redballpizza; }
+      
+      .lymanhall { grid-area: lymanhall; }
+      
+      .newyear { grid-area: newyear; }
+      
+
 }

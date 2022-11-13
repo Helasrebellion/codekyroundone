@@ -95,8 +95,9 @@ h1 {
       }
       
       .webpage {
-        height: 800px;
-        width: 800px;
+        height: 60%;
+        width: 60%;
+        padding-bottom: 10px;
       }
 }
 
@@ -146,11 +147,6 @@ h1 {
 
 }
 
-.webpage {
-  height: 50%;
-  width: 50%;
-  padding-bottom: 10px;
-}
 
 /* Desktop media*/
 

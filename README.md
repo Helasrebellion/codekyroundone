@@ -26,6 +26,8 @@ Create a responsive menu with JavaScript
    
 Add your own transition animation(s) to an element on hover.
 
+Satisfy a requirement of at least 60 with https://pagespeed.web.dev/
+
 
 Feature 1: 
 Mobile, tablet, and desktop media queries with different layouts within them
@@ -56,3 +58,7 @@ Adding your own transition animations to an element on hover using social media 
 
 ![sociallinks](https://github.com/Helasrebellion/helasrebellion.github.io/blob/main/Images/README/sociallinks.png?raw=true)
 
+Feature 4:
+Satisfy a requirement of at least 60 on speedtest
+
+![speedtest](/Images/README/Speedtest.png)

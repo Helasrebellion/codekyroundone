@@ -18,7 +18,6 @@ h3 {
     font-weight: bolder;
     text-align: center;
     font-size: large;
-    padding-bottom: 20px;
 }
 
 h4 {
@@ -37,7 +36,7 @@ h4 {
 
 /* Mobile media*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 576px) {
     
     .body {
         padding: auto;
@@ -60,7 +59,7 @@ h4 {
     "info"
     "summary"
     "skills"
-    "exp";
+    "exp";  
 }
 
 .info { 
@@ -90,11 +89,6 @@ grid-area: info;
       
       
    /* Tablet media*/
-   
-      
-      
-}
-
 @media only screen and (min-width: 768px) {
     
     .Parent {  
@@ -137,7 +131,7 @@ grid-area: info;
         grid-area: exp; 
     
     }
-      
+     
     }
    
     

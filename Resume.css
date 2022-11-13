@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+  }
+
+
 h1 {
     font-size: xx-large;
     text-align: center;
@@ -180,7 +185,5 @@ grid-area: info;
         padding-left: 100px;
         grid-area: exp;
 
-    }
-      
-      
+    }    
 }

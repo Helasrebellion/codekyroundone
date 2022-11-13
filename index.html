@@ -87,17 +87,29 @@ body {
 
    <body>
       <header>
-         <nav>
-            <ul id="navbar">
-               <li><a class="active" href="/index.html">Home</a></li>
-               <li><a href="/aboutme.html">About</a></li>
-               <li><a href="/resume.html">Resume</a></li>
-               <li><a href="/portfolio.html">Portfolio</a></li>
-               <li><a href="/Blog.html">Blog</a></li>
-               <li><a href="/contact.html">Contact</a></li>
-               
-            </ul>
-         </nav>
+         <div class="topnav" id="myTopnav">
+            <a href="/index.html"><img src="/Images/Logo/name.png"
+               alt="freelancelogo"></a>
+            <a href="/aboutme.html">About</a>
+            <a href="/resume.html">Resume</a>
+            <a href="/portfolio.html">Portfolio</a>
+            <a href="/Blog.html">Blog</a>
+            <a href="/contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="navFunc()">
+               <img src="/Images/Logo/list.svg">
+             </a>
+           </div>
+           
+           <script>
+           function navFunc() {
+             var x = document.getElementById("myTopnav");
+             if (x.className === "topnav") {
+               x.className += " responsive";
+             } else {
+               x.className = "topnav";
+             }
+           }
+           </script>
       </header>
 <main>
 

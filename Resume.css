@@ -1,3 +1,40 @@
+h1 {
+    font-size: xx-large;
+    text-align: center;
+}
+
+.headshot {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.info {
+    text-align: center;
+}
+
+h3 {
+    font-weight: bolder;
+    text-align: center;
+    font-size: large;
+    padding-bottom: 20px;
+}
+
+h4 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: medium;
+}
+
+.summary {
+    text-align: center;
+}
+
+.skills {
+    text-align: center;
+}
+
 /* Mobile media*/
 
 @media only screen and (max-width: 600px) {
@@ -128,13 +165,12 @@ grid-area: info;
       }
 
       .info { 
-        
         grid-area: info; 
     
     }
       
       .summary { 
-
+        padding-top: 50px;
         grid-area: summary; 
 
     }
@@ -146,7 +182,8 @@ grid-area: info;
     }
       
       .exp { 
-
+        padding-top: 200px;
+        padding-left: 100px;
         grid-area: exp;
 
     }

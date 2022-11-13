@@ -111,7 +111,38 @@ main {
     background-color: #388f8a;
   }
  /*Footer Styles*/
-
+ @media screen and (max-width: 600px) {
+  #footer {
+    position: absolute;
+    background-color:#08313a;
+    color: White;
+    width:100%;
+  }
+  
+   .leftfooter{
+    text-align:center;
+    float:center;
+    padding-top: 0px;
+    padding-left: 10px;
+    }
+    
+    .rightfooter{
+    float:right;
+    text-align:center;
+    padding-top: 0px;
+    padding-right: 20px;
+  
+    }
+    .centeredfooter{
+    text-align:center;
+    }
+    
+    img{
+    max-width: 150px;
+    min-width: 150px;
+    height: auto;
+}
+ }
 
  #footer {
   position: absolute;

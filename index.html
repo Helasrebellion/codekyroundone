@@ -6,11 +6,10 @@
       <link rel="icon" type="image/x-icon" href="/Images/Logo/smlogo.png">
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="styles.css" rel="stylesheet" />
       <link href="script.js" rel="JavaScript" />
-      
+
       <style>
 body {
    margin: 0;
@@ -80,15 +79,44 @@ body {
             max-width: 300px;
             min-width: 300px;
          }
-      </style>
 
-</head>
+         .custom-shape-divider-bottom-1669319912 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1669320307 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1669320307 svg {
+    position: relative;
+    display: block;
+    width: calc(147% + 1.3px);
+    height: 144px;
+}
+
+.custom-shape-divider-top-1669320307 .shape-fill {
+    fill: #08313A;
+}
+      </style>
+   </head>
 
    <body>
       <header>
          <div class="topnav" id="myTopnav">
             <a href="/index.html"><img src="/Images/Logo/name.png"
-               alt="freelancelogo"></a>
+                  alt="freelancelogo"></a>
             <a href="/aboutme.html">About</a>
             <a href="/resume.html">Resume</a>
             <a href="/portfolio.html">Portfolio</a>
@@ -96,10 +124,10 @@ body {
             <a href="/contact.html">Contact</a>
             <a href="javascript:void(0);" class="icon" onclick="navFunc()">
                <img src="/Images/Logo/list.svg">
-             </a>
-           </div>
-           
-           <script>
+            </a>
+         </div>
+
+         <script>
            function navFunc() {
              var x = document.getElementById("myTopnav");
              if (x.className === "topnav") {
@@ -110,84 +138,98 @@ body {
            }
            </script>
       </header>
-<main>
+      <main>
 
 
-   <section class="hero">
+         <section class="hero">
 
-      <div class="hero-content">
-      
-         <h1 class="hero-title">
-            Developing Meaningful Experiences
-         </h1>
-           
-         <h2 class="hero-subtitle">
-            Website and App Development with exceptional results. <br>
-            If you are a business or employer looking to hire, you can get in touch here.
-         </h2>
-           
-         <button type="button" class="hero-button" onclick="location.href='contact.html'">
-              Contact Me &raquo;
-         </button>
-      
-      </div>
-  
-  </section>
-  
-  
-  
-  
+            <div class="hero-content">
+
+               <h1 class="hero-title">
+                  Developing Meaningful Experiences
+               </h1>
+
+               <h2 class="hero-subtitle">
+                  Website and App Development with exceptional results. <br>
+                  If you are a business or employer looking to hire, you can get
+                  in touch here.
+               </h2>
+
+               <button type="button" class="hero-button"
+                  onclick="location.href='contact.html'">
+                  Contact Me &raquo;
+               </button>
+
+            </div>
+
+            <div class="custom-shape-divider-top-1669320307">
+               <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1200 120" preserveAspectRatio="none">
+                  <path
+                     d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                     class="shape-fill"></path>
+               </svg>
+            </div>
+         </section>
+
+
+
+
          <h2 align="center">Application and Website Design</h2>
 
-  <div id="languagesknown">
-  <img src="/Images/Logo/html.png"
-  alt="htmllogo" style="width:100px;height:100px;">
-  <img src="/Images/Logo/css.png"
-  alt="csslogo" style="width:100px;height:100px;">
-  <img src="/Images/Logo/javascript.png"
-  alt="javascriptlogo" style="width:100px;height:100px;">
-  <img src="/Images/Logo/react-js.png"
-  alt="reactlogo" style="width:100px;height:100px;">
-  <img src="/Images/Logo/php_PNG23.png"
-  alt="phplogo" style="width:100px;height:100px;">
-  <img src="/Images/Logo/java-programming-language.png"
-  alt="javalogo" style="width:100px;height:100px;">
-  <img src="/Images/Logo/go-programming-language.png"
-  alt="golanglogo" style="width:100px;height:100px;">
-  <img src="/Images/Logo/python-programming-language.png"
-  alt="pythonlogo" style="width:100px;height:100px;">
-  <img src="/Images/Logo/mysql_PNG23.png"
-  alt="mysqllogo" style="width:100px;height:100px;">
-</div>
-      
-</main>
-<div id="footer">
-   <p class="leftfooter">Sylvia Mullins Development © 2022 All rights reserved</p>
-   <p class="rightfooter">Follow me<br />
+         <div id="languagesknown">
+            <img src="/Images/Logo/html.png"
+               alt="htmllogo" style="width:100px;height:100px;">
+            <img src="/Images/Logo/css.png"
+               alt="csslogo" style="width:100px;height:100px;">
+            <img src="/Images/Logo/javascript.png"
+               alt="javascriptlogo" style="width:100px;height:100px;">
+            <img src="/Images/Logo/react-js.png"
+               alt="reactlogo" style="width:100px;height:100px;">
+            <img src="/Images/Logo/php_PNG23.png"
+               alt="phplogo" style="width:100px;height:100px;">
+            <img src="/Images/Logo/java-programming-language.png"
+               alt="javalogo" style="width:100px;height:100px;">
+            <img src="/Images/Logo/go-programming-language.png"
+               alt="golanglogo" style="width:100px;height:100px;">
+            <img src="/Images/Logo/python-programming-language.png"
+               alt="pythonlogo" style="width:100px;height:100px;">
+            <img src="/Images/Logo/mysql_PNG23.png"
+               alt="mysqllogo" style="width:100px;height:100px;">
+         </div>
 
-<button onclick="window.location.href='https://github.com/Helasrebellion';" class="socialButton">
-   <img src="/Images/Social Media/github.svg"
-      alt="githublogo" style="width:30px;height:50px;"> </button>
-      
-   <button onclick="window.location.href='https://www.linkedin.com/in/sylviahela/';" class="socialButton">
-      <img src="/Images/Social Media/linkedin.svg"
-      alt="linkedinlogo" style="width:30px;height:50px;"> </button>
-            
-      <button onclick="window.location.href='https://www.instagram.com/sylviamullinsdev/';" class="socialButton">
-         <img src="/Images/Social Media/instagram.svg"
-      alt="instagramlogo" style="width:30px;height:50px;"> </button>
-   
-      <button onclick="window.location.href='https://twitter.com/SylviaMDev';" class="socialButton">
-         <img src="/Images/Social Media/twitter.svg"
-      alt="twitterlogo" style="width:30px;height:50px;"> </button>
+      </main>
+      <div id="footer">
+         <p class="leftfooter">Sylvia Mullins Development © 2022 All rights
+            reserved</p>
+         <p class="rightfooter">Follow me<br />
 
+            <button
+               onclick="window.location.href='https://github.com/Helasrebellion';"
+               class="socialButton">
+               <img src="/Images/Social Media/github.svg"
+                  alt="githublogo" style="width:30px;height:50px;"> </button>
+            <button
+               onclick="window.location.href='https://www.linkedin.com/in/sylviahela/';"
+               class="socialButton">
+               <img src="/Images/Social Media/linkedin.svg"
+                  alt="linkedinlogo" style="width:30px;height:50px;"> </button>
+            <button
+               onclick="window.location.href='https://www.instagram.com/sylviamullinsdev/';"
+               class="socialButton">
+               <img src="/Images/Social Media/instagram.svg"
+                  alt="instagramlogo" style="width:30px;height:50px;"> </button>
+            <button
+               onclick="window.location.href='https://twitter.com/SylviaMDev';"
+               class="socialButton">
+               <img src="/Images/Social Media/twitter.svg"
+                  alt="twitterlogo" style="width:30px;height:50px;"> </button>
+         </p>
+         <p class="centeredfooter">
 
-      
-   </p>
-   <p class="centeredfooter">
-      
-      <img id="logofooter" src="/Images/Logo/smlogo.png" alt="freelancelogo">
-   </p>
-</div>
+            <img id="logofooter" src="/Images/Logo/smlogo.png"
+               alt="freelancelogo">
+         </p>
+      </div>
    </body>
 </html>

@@ -1,106 +1,114 @@
 h1 {
-    font-size: xx-large;
-    padding-bottom: 10px;
+  font-size: xx-large;
+  padding-bottom: 10px;
 }
+
 .githublink {
-    background-color: #1a5653;
-    border: none;
-    color: black;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 16px;
-  }
-  .githublink {
-    position: relative;
-    background-color: #1a5653;
-    border: none;
-    border-radius: 16px;
-    font-size: 28px;
-    padding: 0px;
-    width: 250px;
-    height: 50px;
-    text-align: center;
-    -webkit-transition-duration: 0.4s; 
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
-  }
-  .githublink:after {
-    content: "";
-    background: #5cd3cd;
-    display: block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -20px!important;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 0.8s
-  }
-  
-  .githublink:active:after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
-  }
+  background-color: #1a5653;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
 
-  .githublink:hover {
-    transform: scale(1.2);
-    background-color: #388f8a;
-  }
+.githublink {
+  position: relative;
+  background-color: #1a5653;
+  border: none;
+  border-radius: 16px;
+  font-size: 28px;
+  padding: 0px;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
 
-  .webpage {
-    height: 550px;
-    width: 500px;
-    padding-bottom: 10px;
-  }
+.githublink:after {
+  content: "";
+  background: #5cd3cd;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.githublink:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.githublink:hover {
+  transform: scale(1.2);
+  background-color: #388f8a;
+}
+
+.webpage {
+  height: 550px;
+  width: 500px;
+  padding-bottom: 10px;
+}
+
 /* Mobile media*/
 
 @media only screen and (min-width: 576px) {
 
-    .Portfolio {  display: grid;
-        grid-template-columns: 50%;
-        grid-template-rows: 25% 25% 25% 25%;
-        grid-auto-columns: 1fr;
-        grid-auto-rows: 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: column;
-        justify-content: center;
-        align-content: space-between;
-        justify-items: stretch;
-        align-items: stretch;
-        grid-template-areas:
-          "javacalc"
-          "redballpizza"
-          "lymanhall"
-          "newyear";
-      }
-      
-      .javacalc { 
-        grid-area: javacalc;
-        padding-bottom: 30px;
- 
-    }
-      
-      .redballpizza { grid-area: redballpizza;
-        padding-bottom: 30px;
-      }
-      
-      .lymanhall { grid-area: lymanhall;
-        padding-bottom: 30px;
-      }
-      
-      .newyear { grid-area: newyear; 
-        padding-bottom: 30px;
-      }
-      
-    
+  .Portfolio {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-content: space-between;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas:
+      "javacalc"
+      "redballpizza"
+      "lymanhall"
+      "newyear";
+  }
+
+  .javacalc {
+    grid-area: javacalc;
+    padding-bottom: 30px;
+
+  }
+
+  .redballpizza {
+    grid-area: redballpizza;
+    padding-bottom: 30px;
+  }
+
+  .lymanhall {
+    grid-area: lymanhall;
+    padding-bottom: 30px;
+  }
+
+  .newyear {
+    grid-area: newyear;
+    padding-bottom: 30px;
+  }
+
+
 }
 
 
@@ -111,49 +119,55 @@ h1 {
 
 @media only screen and (min-width: 768px) {
 
-    .Portfolio {  display: grid;
-        grid-template-columns: 50%;
-        grid-template-rows: 25% 25% 25% 25%;
-        grid-auto-columns: 1fr;
-        grid-auto-rows: 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: column;
-        justify-content: center;
-        align-content: space-between;
-        justify-items: stretch;
-        align-items: stretch;
-        grid-template-areas:
-          "javacalc"
-          "redballpizza"
-          "lymanhall"
-          "newyear";
-      }
-      
-      .javacalc { grid-area: javacalc;
-        padding-top: 110px;
-      }
-      
-      .redballpizza { grid-area: redballpizza;
-        padding-top: 20px;
-        padding-bottom: 50px;
-      }
-      
-      .lymanhall { grid-area: lymanhall;
-        padding-top: 20px;
-        padding-bottom: 50px;
-      }
-      
-      .newyear { grid-area: newyear; 
-        padding-top: 30px;
-        padding-bottom: 50px;
+  .Portfolio {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-content: space-between;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas:
+      "javacalc"
+      "redballpizza"
+      "lymanhall"
+      "newyear";
+  }
 
-      }
-      .webpage {
-        height: 750px;
-        width: 700px;
-        padding-bottom: 10px;
-      }
-     
+  .javacalc {
+    grid-area: javacalc;
+    padding-top: 110px;
+  }
+
+  .redballpizza {
+    grid-area: redballpizza;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+
+  .lymanhall {
+    grid-area: lymanhall;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+
+  .newyear {
+    grid-area: newyear;
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+  }
+
+  .webpage {
+    height: 750px;
+    width: 700px;
+    padding-bottom: 10px;
+  }
+
 
 }
 
@@ -163,47 +177,51 @@ h1 {
 
 @media only screen and (min-width: 992px) {
 
-    .Portfolio {  display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
-        grid-auto-columns: 1fr;
-        grid-auto-rows: 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: column;
-        justify-content: center;
-        align-content: space-between;
-        justify-items: stretch;
-        align-items: stretch;
-        grid-template-areas:
-          "javacalc redballpizza"
-          "lymanhall newyear";
-      }
-      
-      .javacalc { 
-        grid-area: javacalc;
-        padding-bottom: 20px;
+  .Portfolio {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-content: space-between;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas:
+      "javacalc redballpizza"
+      "lymanhall newyear";
+  }
 
-    }
-      
-      .redballpizza { grid-area: redballpizza;
-        padding-bottom: 20px;
+  .javacalc {
+    grid-area: javacalc;
+    padding-bottom: 20px;
 
-      }
-      
-      .lymanhall { grid-area: lymanhall;
-        padding-bottom: 50px;
+  }
 
-      }
-      
-      .newyear { grid-area: newyear; 
-        padding-bottom: 50px;
+  .redballpizza {
+    grid-area: redballpizza;
+    padding-bottom: 20px;
 
-      }
-      
-      .webpage {
-        height: 80%;
-        width: 80%;
-        padding-bottom: 10px;
-      }
-      
+  }
+
+  .lymanhall {
+    grid-area: lymanhall;
+    padding-bottom: 50px;
+
+  }
+
+  .newyear {
+    grid-area: newyear;
+    padding-bottom: 50px;
+
+  }
+
+  .webpage {
+    height: 80%;
+    width: 80%;
+    padding-bottom: 10px;
+  }
+
 }

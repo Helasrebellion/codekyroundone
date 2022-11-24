@@ -1,22 +1,28 @@
-.Portfolio {  display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: column;
-    justify-content: center;
-    align-content: space-between;
-    justify-items: stretch;
-    align-items: stretch;
-    grid-template-areas:
-      "slideshow-container slideshow-container"
-      "left right";
-  }
-  
-  .slideshow-container { grid-area: slideshow-container; }
-  
-  .left { grid-area: left; }
-  
-  .right { grid-area: right; }
-  
+.Portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-content: space-between;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-areas:
+    "slideshow-container slideshow-container"
+    "left right";
+}
+
+.slideshow-container {
+  grid-area: slideshow-container;
+}
+
+.left {
+  grid-area: left;
+}
+
+.right {
+  grid-area: right;
+}

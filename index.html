@@ -67,6 +67,40 @@ body {
 .hero-button:hover {
    background-color: #48b49d;
    border: 1px solid #48b49d;
+
+   .landing {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: #f1f1f1;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.5s, transform 0.5s;
+    }
+    .landing.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+    .content {
+      height: 100vh;
+      background: #ffffff;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.5s, transform 0.5s;
+    }
+    .content.visible {
+      opacity: 1;
+      transform: translateY(0);
 }
 
 
@@ -80,44 +114,46 @@ body {
             min-width: 300px;
          }
 
-         .custom-shape-divider-top-1669858470 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1669858470 svg {
-    position: relative;
-    display: block;
-    width: calc(105% + 1.3px);
-    height: 90px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-top-1669858470 .shape-fill {
-    fill: #08313A;
 }
       </style>
    </head>
 
    <body>
       <header>
-         <div class="topnav" id="myTopnav">
-            <a href="/index.html"><img src="/Images/Logo/name.png"
-                  alt="freelancelogo"></a>
-            <a href="/aboutme.html">About</a>
-            <a href="/resume.html">Resume</a>
-            <a href="/portfolio.html">Portfolio</a>
-            <a href="/Blog.html">Blog</a>
-            <a href="/contact.html">Contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="navFunc()">
-               <img src="/Images/Logo/list.svg">
-            </a>
-         </div>
-
+         <script>
+            window.addEventListener('scroll', revealContent);
+        
+            function revealContent() {
+              // Get references to the landing and content sections
+              var landing = document.querySelector('.landing');
+              var content = document.querySelector('.content');
+        
+              // Get the position of the sections relative to the viewport
+              var landingPosition = landing.getBoundingClientRect().top;
+              var contentPosition = content.getBoundingClientRect().top;
+        
+              // Calculate the window height
+              var windowHeight = window.innerHeight;
+        
+              // Check if the landing section is in the viewport
+              if (landingPosition < windowHeight / 2) {
+                // Add the "visible" class to trigger the fade-in and move-up animation
+                landing.classList.add('visible');
+              } else {
+                // Remove the "visible" class if the landing section is not in the viewport
+                landing.classList.remove('visible');
+              }
+        
+              // Check if the content section is in the viewport
+              if (contentPosition < windowHeight / 2) {
+                // Add the "visible" class to trigger the fade-in and move-up animation
+                content.classList.add('visible');
+              } else {
+                // Remove the "visible" class if the content section is not in the viewport
+                content.classList.remove('visible');
+              }
+            }
+          </script>
          <script>
            function navFunc() {
              var x = document.getElementById("myTopnav");
@@ -131,63 +167,78 @@ body {
       </header>
       <main>
 
+         <div class="landing">
 
-         <section class="hero">
+            <section class="hero">
 
-            <div class="hero-content">
+               <div class="hero-content">
 
-               <h1 class="hero-title">
-                  Developing Meaningful Experiences
-               </h1>
+                  <h1 class="hero-title">
+                     Developing Meaningful Experiences
+                  </h1>
 
-               <h2 class="hero-subtitle">
-                  Website and App Development with exceptional results. <br>
-                  If you are a business or employer looking to hire, you can get
-                  in touch here.
-               </h2>
+                  <h2 class="hero-subtitle">
+                     Website and App Development with exceptional results. <br>
+                     If you are a business or employer looking to hire, you can
+                     get
+                     in touch here.
+                  </h2>
 
-               <button type="button" class="hero-button"
-                  onclick="location.href='contact.html'">
-                  Contact Me &raquo;
-               </button>
+                  <button type="button" class="hero-button"
+                     onclick="location.href='contact.html'">
+                     Contact Me &raquo;
+                  </button>
 
+               </div>
             </div>
 
-            <div class="custom-shape-divider-top-1669858470">
-               <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                   <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-               </svg>
-           </div>
+            <div class="content">
+               <div class="topnav" id="myTopnav">
+                  <a href="/index.html"><img src="/Images/Logo/name.png"
+                        alt="freelancelogo"></a>
+                  <a href="/aboutme.html">About</a>
+                  <a href="/resume.html">Resume</a>
+                  <a href="/portfolio.html">Portfolio</a>
+                  <a href="/Blog.html">Blog</a>
+                  <a href="/contact.html">Contact</a>
+                  <a href="javascript:void(0);" class="icon"
+                     onclick="navFunc()">
+                     <img src="/Images/Logo/list.svg">
+                  </a>
+               </div>
 
-         </section>
+
+            </section>
 
 
 
 
-         <h2 align="center">Application and Website Design</h2>
+            <h2 align="center">Application and Website Design</h2>
 
-         <div id="languagesknown">
-            <img src="/Images/Logo/html.png"
-               alt="htmllogo" style="width:100px;height:100px;">
-            <img src="/Images/Logo/css.png"
-               alt="csslogo" style="width:100px;height:100px;">
-            <img src="/Images/Logo/javascript.png"
-               alt="javascriptlogo" style="width:100px;height:100px;">
-            <img src="/Images/Logo/react-js.png"
-               alt="reactlogo" style="width:100px;height:100px;">
-            <img src="/Images/Logo/php_PNG23.png"
-               alt="phplogo" style="width:100px;height:100px;">
-            <img src="/Images/Logo/java-programming-language.png"
-               alt="javalogo" style="width:100px;height:100px;">
-            <img src="/Images/Logo/go-programming-language.png"
-               alt="golanglogo" style="width:100px;height:100px;">
-            <img src="/Images/Logo/python-programming-language.png"
-               alt="pythonlogo" style="width:100px;height:100px;">
-            <img src="/Images/Logo/mysql_PNG23.png"
-               alt="mysqllogo" style="width:100px;height:100px;">
-         </div>
+            <div id="languagesknown">
+               <img src="/Images/Logo/html.png"
+                  alt="htmllogo" style="width:100px;height:100px;">
+               <img src="/Images/Logo/css.png"
+                  alt="csslogo" style="width:100px;height:100px;">
+               <img src="/Images/Logo/javascript.png"
+                  alt="javascriptlogo" style="width:100px;height:100px;">
+               <img src="/Images/Logo/react-js.png"
+                  alt="reactlogo" style="width:100px;height:100px;">
+               <img src="/Images/Logo/php_PNG23.png"
+                  alt="phplogo" style="width:100px;height:100px;">
+               <img src="/Images/Logo/java-programming-language.png"
+                  alt="javalogo" style="width:100px;height:100px;">
+               <img src="/Images/Logo/go-programming-language.png"
+                  alt="golanglogo" style="width:100px;height:100px;">
+               <img src="/Images/Logo/python-programming-language.png"
+                  alt="pythonlogo" style="width:100px;height:100px;">
+               <img src="/Images/Logo/mysql_PNG23.png"
+                  alt="mysqllogo" style="width:100px;height:100px;">
+            </div>
 
-      </main>
+         </main>
+      </div>
+
       <div id="footer">
          <p class="leftfooter">Sylvia Mullins Development © 2022 All rights
             reserved</p>

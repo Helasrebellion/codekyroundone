@@ -11,6 +11,23 @@ body {
   margin-bottom: 0%;
 }
 
+
+/*gallery on homepage*/
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.gallery img {
+  width: 600px;
+  height: 550px;
+  object-fit: cover;
+  margin: 10px;
+}
+
 /*Nav Styles*/
 .topnav a {
   float: left;

@@ -213,6 +213,20 @@ body {
 
             <h2 align="center">Application and Website Design</h2>
 
+<!-- 
+   Requirement 1 (first set): 
+
+      Visualize data in a user friendly way. (e.g. graph, chart, etc)
+
+      && 
+
+   Requirement 2 (third set):
+
+      Develop your project using a common JavaScript framework
+      such as React, Angular, or Vue
+            -->
+
+
             <div id="languagesknown">
                <img src="/Images/Logo/html.png"
                   alt="htmllogo" style="width:100px;height:100px;">
@@ -233,6 +247,43 @@ body {
                <img src="/Images/Logo/mysql_PNG23.png"
                   alt="mysqllogo" style="width:100px;height:100px;">
             </div>
+
+
+      <!-- 
+         Requirement 2 (first set): 
+
+             Use arrays, objects, sets or maps to store and retrieve information 
+              that is displayed in your app
+
+       -->
+            
+            <div class="gallery"></div>
+
+            <script>
+              const images = [
+                { src: 'Images/Portfolio/redball.png', alt: 'Redball Pizza' },
+                { src: 'Images/Portfolio/lyman hall theater.png', alt: 'Lyman Hall Theater' },
+                { src: 'Images/Portfolio/New Year Bash.png', alt: 'New Years Bash' },
+              ];
+          
+              const gallery = document.querySelector('.gallery');
+          
+              images.forEach(image => {
+                const imgElement = document.createElement('img');
+                imgElement.src = image.src;
+                imgElement.alt = image.alt;
+                gallery.appendChild(imgElement);
+              });
+            </script>
+
+<!-- 
+   Requirement 3 (second set): 
+
+      Retrieve data from a third-party API
+       and use it to display something within your app.
+            -->
+
+
 
          </main>
       </div>

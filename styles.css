@@ -57,6 +57,7 @@ body {
 
 }
 
+
 /*Media Q Nav Styles*/
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {

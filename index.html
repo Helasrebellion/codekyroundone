@@ -8,7 +8,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="styles.css" rel="stylesheet" />
-      <link href="script.js" rel="JavaScript" />
+      <link href="index.jsx" rel="JavaScript" />
 
       <style>
 body {
@@ -229,11 +229,9 @@ body {
    
                   CURRENTLY IN HTML CSS AND JS FOR SKELETON NEEDS BUILT IN REACT
    
-            -->
+            
 
             <div id="languagesknown">
-               <img src="/Images/Logo/html.png"
-                  alt="htmllogo" style="width:100px;height:100px;">
                <div class="progress-bar">
                   <div class="progress-bar-fill" id="progress1"></div>
                </div>
@@ -282,43 +280,12 @@ body {
                <div class="progress-bar">
                   <div class="progress-bar-fill" id="progress10"></div>
                </div>
-
-               <script>
-                     function updateProgressBar(barId, progress) {
-                       var progressBarFill = document.getElementById(barId);
-                       progressBarFill.style.width = progress + '%';
-                     }
-                 
-                     // Example usage:
-                     updateProgressBar('progress1', 100);
-                     updateProgressBar('progress2', 100);   
-                     updateProgressBar('progress3', 80);   
-                     updateProgressBar('progress4', 10);   
-                     updateProgressBar('progress5', 50);   
-                     updateProgressBar('progress6', 80);   
-                     updateProgressBar('progress7', 40);   
-                     updateProgressBar('progress8', 40);   
-                     updateProgressBar('progress9', 60);   
-                     updateProgressBar('progress10', 20);   
-   
-                     </script>
-
-               <style>
-   .progress-bar {
-     width: 300px;
-     height: 20px;
-     border: 1px solid black;
-     background-color: black;
-     margin-bottom: 10px;
-     border-radius: 80px;
-   }
-
-   .progress-bar-fill {
-     height: 100%;
-     background-color: #4caf50;
-     border-radius: 80px;
-   }
- </style>
+-->
+              
+               <div id="root"></div>
+               <script src="index.js"></script>
+             
+             
 
             </div>
 

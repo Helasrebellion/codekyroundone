@@ -13,10 +13,16 @@
   .image-placeholder {
     width: 100px; 
     height: 100px; 
+    transition: transform 0.3s ease;
+  }
+  
+  .image-placeholder:hover {
+    transform: scale(1.1); 
   }
   
   .progress-bar {
     width: 100%;
+    min-width: 100px; 
     height: 20px;
     background-color: black;
     border-radius: 10px;
@@ -28,6 +34,10 @@
     background-color: #28a745; 
     border-radius: 10px;
     box-shadow: 0 0 5px 3px rgba(40, 167, 69, 0.3); 
-    transition: width 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .progress:hover {
+    box-shadow: 0 0 20px 10px rgba(40, 167, 69, 0.5); 
   }
   
